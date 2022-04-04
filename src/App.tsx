@@ -25,11 +25,14 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
+import { Header } from './components';
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <CSSReset />
     <ColorModeSwitcher />
+
+    <Header />
 
     <Container maxWidth="container.xl" p={20}>
       <Flex h="100vh" p={10}>

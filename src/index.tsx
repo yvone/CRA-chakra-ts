@@ -6,10 +6,11 @@ import {
   ColorModeScript,
   ChakraProvider,
   CSSReset,
-  theme,
 } from "@chakra-ui/react"
 
 import { App } from "./pages/App"
+import './styles.css';
+import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>

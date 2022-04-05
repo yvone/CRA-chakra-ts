@@ -7,10 +7,13 @@ import {
 	AspectRatio,
 	Image,
 	Divider,
+	useBreakpointValue,
 } from "@chakra-ui/react";
 import { IPropTypes } from './cart.types';
 
 function Cart(props: IPropTypes): JSX.Element {
+	const background = useBreakpointValue({ base: "white", sm: "gray.200" });
+
 	return (
 		<VStack
 			h="full"
@@ -18,7 +21,7 @@ function Cart(props: IPropTypes): JSX.Element {
 			p={10}
 			spacing={10}
 			alignItems="flex-start"
-			bg="gray.50"
+			bg="wtw.200"
 		>
 			<VStack alignItems="flex-start" p={0}>
 				<Heading size="2xl">Your cart</Heading>

@@ -16,6 +16,7 @@ import {
 import { IPropTypes } from './details.types';
 
 function Details(props: IPropTypes): JSX.Element {
+	const colSpan = { base: 2, md: 1 };
 	return (
 		<VStack
 			h="full"
@@ -30,14 +31,14 @@ function Details(props: IPropTypes): JSX.Element {
 			</VStack>
 
 			<Grid column={2} columnGap={3} rowGap={6} w="full">
-				<GridItem colSpan={1}>
+				<GridItem colSpan={colSpan}>
 					<FormControl>
 						<FormLabel>First name</FormLabel>
-						<Input placeholder="John" />
+						<Input placeholder="John" borderRadius="4px" />
 					</FormControl>
 				</GridItem>
 
-				<GridItem colSpan={1}>
+				<GridItem colSpan={colSpan}>
 					<FormControl>
 						<FormLabel>Last name</FormLabel>
 						<Input placeholder="Doe" />
@@ -51,14 +52,14 @@ function Details(props: IPropTypes): JSX.Element {
 					</FormControl>
 				</GridItem>
 
-				<GridItem colSpan={1}>
+				<GridItem colSpan={colSpan}>
 					<FormControl>
 						<FormLabel>City</FormLabel>
 						<Input placeholder="San Francisco" />
 					</FormControl>
 				</GridItem>
 
-				<GridItem colSpan={1}>
+				<GridItem colSpan={colSpan}>
 					<FormControl>
 						<FormLabel>Country</FormLabel>
 						<Select>
